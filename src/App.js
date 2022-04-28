@@ -12,8 +12,8 @@ function App() {
   // Handles the ability for the <RecipeCreate /> component to create new recipes.
   const createRecipe = (newRecipe) =>
     setRecipes((currentRecipes) => [
-      newRecipe,
       ...currentRecipes,
+      newRecipe,
     ]);
 
   const deleteRecipe = (indexToDelete) =>
